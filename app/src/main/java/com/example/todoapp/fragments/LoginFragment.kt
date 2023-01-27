@@ -53,6 +53,8 @@ class LoginFragment : Fragment() {
                             Toast.makeText(context, it.exception?.message, Toast.LENGTH_SHORT).show()
                         }
                     })
+            } else {
+                Toast.makeText(context, "The fields are empty.", Toast.LENGTH_SHORT).show()
             }
         }
     }
